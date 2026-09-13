@@ -2,7 +2,7 @@
 
 The signed, notarised builds of the [Tools for HEY](https://toolsforhey.com) apps,
 by Soules Studio LTD. The source is not public. Issues are open here for bug
-reports and questions about the apps, and support@toolsforhey.com reaches the
+reports and questions about the apps, and support@soulesstudio.com reaches the
 same person.
 
 Tools for HEY are unofficial native Mac apps built on top of the official HEY CLI.
@@ -62,4 +62,4 @@ codesign -dv --verbose=2 "/Volumes/MenuBar for HEY/MenuBar for HEY.app"
 ```
 
 If either check fails, or macOS warns you about a file that came from here, do
-not open it, and tell us at support@toolsforhey.com or in an issue.
+not open it, and tell us at support@soulesstudio.com or in an issue.
