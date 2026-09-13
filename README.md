@@ -1,21 +1,28 @@
 # Tools for HEY releases
 
-The signed, notarised builds of the [Tools for HEY](https://toolsforhey.com) apps.
-Nothing else lives here: no source, no issues, no discussion.
+The signed, notarised builds of the [Tools for HEY](https://toolsforhey.com) apps,
+by Soules Studio LTD. The source is not public. Issues are open here for bug
+reports and questions about the apps, and support@toolsforhey.com reaches the
+same person.
 
 Tools for HEY are unofficial native Mac apps built on top of the official HEY CLI.
 Not affiliated with 37signals. HEY is a trademark of 37signals.
 
 ## What is here
 
-One GitHub release per app release, tagged by app and version:
+One GitHub release per app release, tagged by app and version, for example:
 
-- `menubar-1.0.0` for MenuBar for HEY
+- `menubar-0.6.0` for MenuBar for HEY
 - `file-1.0.0` for File for HEY, when it ships
 
 Each release carries one asset, the disk image. Downloads for people belong on
 [toolsforhey.com](https://toolsforhey.com), which is where the apps are actually
 described. This repository is where the file itself is served from.
+
+Each app bundles the official `hey` command line tool from
+[github.com/basecamp/hey-cli](https://github.com/basecamp/hey-cli), MIT licensed
+by 37signals. The licence text ships inside the app and is shown under
+Settings > About.
 
 ## Why the binaries are here and not on the website
 
@@ -37,5 +44,20 @@ removed.
 ## Verifying a download
 
 Every disk image is signed with a Developer ID certificate and notarised by
-Apple, so macOS opens it without a warning. If macOS warns you about a file that
-came from here, do not open it, and tell us at support@toolsforhey.com.
+Apple, so macOS opens it without a warning. To check a download yourself, either
+compare its SHA-256 with the digest GitHub shows beside the asset, or ask macOS
+who signed it:
+
+```
+spctl -a -t open --context context:primary-signature -vv MenuBarForHEY-0.6.0.dmg
+```
+
+It should answer `accepted` and `source=Notarized Developer ID`. Inside the
+image, this should name Soules Studio LTD with team identifier 93XLFSVNZ7:
+
+```
+codesign -dv --verbose=2 "/Volumes/MenuBar for HEY/MenuBar for HEY.app"
+```
+
+If either check fails, or macOS warns you about a file that came from here, do
+not open it, and tell us at support@toolsforhey.com or in an issue.
