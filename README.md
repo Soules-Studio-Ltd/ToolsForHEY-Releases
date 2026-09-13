@@ -8,6 +8,9 @@ same person.
 Tools for HEY are unofficial native Mac apps built on top of the official HEY CLI.
 Not affiliated with 37signals. HEY is a trademark of 37signals.
 
+What the apps keep on your Mac, what they send and what they never do with your
+data is in [PRIVACY.md](PRIVACY.md).
+
 ## What is here
 
 One GitHub release per app release, tagged by app and version, for example:
