@@ -4,6 +4,11 @@ How the Tools for HEY apps handle what is yours. Written for MenuBar for HEY, an
 File for HEY will get its own section when it ships. Last updated 13 September
 2026.
 
+This is the short form. The full statement, with every event the app can send
+listed by name, is at
+[toolsforhey.com/menubar/privacy](https://toolsforhey.com/menubar/privacy), and
+where the two ever differ, that page is the one that counts.
+
 Tools for HEY are unofficial native Mac apps built on top of the official HEY CLI,
 by Soules Studio LTD. Not affiliated with 37signals. HEY is a trademark of
 37signals.
@@ -29,10 +34,11 @@ HEY, as with any HEY client.
 ## Usage events and crash reports
 
 If usage events are on, and they are on by default, the app sends PostHog in the
-EU the name of an event such as the popover opening, one detail such as where a
-thread was moved, the app version and build, the macOS version and the install
+EU the name of an event such as the popover opening, a detail or two such as where
+a thread was moved, the app version and build, the macOS version and the install
 id. A crash sends a stack trace with the same facts. Never your mail, your name,
-your address or your account, and no profile is ever built.
+your address or your account, and no profile is ever built. PostHog is set to
+discard the client IP address, so your address is not stored with the events.
 
 Switch it off under Settings > Privacy. Nothing is sent while it is off.
 
