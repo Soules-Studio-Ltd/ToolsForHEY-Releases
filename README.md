@@ -16,7 +16,6 @@ data is in [PRIVACY.md](PRIVACY.md).
 One GitHub release per app release, tagged by app and version, for example:
 
 - `menubar-0.6.0` for MenuBar for HEY
-- `file-1.0.0` for File for HEY, when it ships
 
 Each release carries one asset, the disk image. Downloads for people belong on
 [toolsforhey.com](https://toolsforhey.com), which is where the apps are actually
