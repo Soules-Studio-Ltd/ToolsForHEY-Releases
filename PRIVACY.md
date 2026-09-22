@@ -1,7 +1,7 @@
 # Your data
 
 How the Tools for HEY apps handle what is yours. Written for MenuBar for HEY, and
-File for HEY will get its own section when it ships. Last updated 13 September
+File for HEY will get its own section when it ships. Last updated 22 September
 2026.
 
 This is the short form. The full statement, with every event the app can send
@@ -41,6 +41,22 @@ your address or your account, and no profile is ever built. PostHog is set to
 discard the client IP address, so your address is not stored with the events.
 
 Switch it off under Settings > Privacy. Nothing is sent while it is off.
+
+## Diagnostics you copy
+
+Settings > About has a Copy diagnostics row. Pressing it puts one plain text
+report on your clipboard and nothing else happens. Nothing is written to disk and
+nothing is sent anywhere. The text leaves your Mac only when you paste it into a
+message to support.
+
+It holds what the app knows about itself and its connection: the app and macOS
+versions, the version of the bundled `hey` tool, whether the app is running from
+a translocated path or a disk image, whether that tool passed the app's trust
+check, the connection state, how the last Imbox read and Screener check ended and
+the kind of failure if either failed, whether each list is empty, the size of the
+cached page file, and up to 50 log lines from the current run. Those lines name
+the call that failed and the kind of failure, never the tool's own output. Never
+a subject, a sender, a name, an address, a token or the install id.
 
 ## Updates
 
