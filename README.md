@@ -1,7 +1,7 @@
 # Tools for HEY releases
 
 The signed, notarised builds of the [Tools for HEY](https://toolsforhey.com) apps,
-by Soules Studio LTD. The source is not public. Issues are open here for bug
+by Soules Studio Ltd. The source is not public. Issues are open here for bug
 reports and questions about the apps, and support@soulesstudio.com reaches the
 same person.
 
@@ -16,6 +16,9 @@ data is in [PRIVACY.md](PRIVACY.md).
 One GitHub release per app release, tagged by app and version, for example:
 
 - `menubar-0.6.0` for MenuBar for HEY
+
+File for HEY's releases live in a repository of their own,
+[FileForHEY-Releases](https://github.com/Soules-Studio-Ltd/FileForHEY-Releases).
 
 Each release carries one asset, the disk image. Downloads for people belong on
 [toolsforhey.com](https://toolsforhey.com), which is where the apps are actually
